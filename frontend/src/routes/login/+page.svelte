@@ -13,10 +13,7 @@
 		const { success } = await login(email, password);
 
 		if (success) {
-			// After login, we want to redirect based on role.
-			// We will build a component to handle this logic soon.
-			// For now, just go to a temporary loading page.
-			goto('/');
+			location.href = '/'; // Forces a full reload, sends cookie to server
 		} else {
 			errorMessage = 'Login failed. Please check your email and password.';
 		}
