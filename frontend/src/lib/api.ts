@@ -8,7 +8,7 @@ export const pb = new PocketBase('http://127.0.0.1:8090' );
 
 // Create a writable Svelte store to hold the auth state
 // We type it to accept a User, Admin, or null model
-export const authStore = writable<{ user: Record | Admin | null }>({
+export const authStore = writable<{ user: Record | Admin | null }>({ 
 	user: pb.authStore.model
 });
 
@@ -16,6 +16,7 @@ export const authStore = writable<{ user: Record | Admin | null }>({
 export async function login(email, password) {
 	try {
 		await pb.collection('users').authWithPassword(email, password);
+		
 		// Update the store on successful login
 		authStore.set({
 			user: pb.authStore.model
