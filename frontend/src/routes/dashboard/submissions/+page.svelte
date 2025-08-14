@@ -1,21 +1,24 @@
 <script lang="ts">
-	import { pb } from "$lib/api";
-	import { onMount } from "svelte";
+	import { pb } from '$lib/api';
+	import { onMount } from 'svelte';
 
 	let submissions: any[] = [];
 	let isLoading = true;
 
 	onMount(async () => {
 		try {
-			// Fetch submissions and automatically expand related 'form' and 'submittedBy' records
-			const result = await pb.collection("submissions").getFullList({
-				sort: "-created",
-				expand: "form,submittedBy", // <-- Key change: expand related data
+			const result = await pb.collection('submissions').getFullList({
+				sort: '-created',
+				expand: 'form,submittedBy'
 			});
 
 			submissions = result;
+			submissions.forEach((s) => {
+				console.log(`Form Name: ${s.expand?.form?.formName || 'N/A'}`);
+				console.log(JSON.stringify(s.expand?.submittedBy, null, 2));
+			});
 		} catch (error) {
-			console.error("Error fetching submissions:", error);
+			console.error('Error fetching submissions:', error);
 		} finally {
 			isLoading = false;
 		}
@@ -37,6 +40,11 @@
 						<th
 							scope="col"
 							class="px-6 py-3 text-left text-xs font-medium uppercase tracking-wider text-gray-500"
+							>#</th
+						>
+						<th
+							scope="col"
+							class="px-6 py-3 text-left text-xs font-medium uppercase tracking-wider text-gray-500"
 							>Form Name</th
 						>
 						<th
@@ -52,13 +60,14 @@
 					</tr>
 				</thead>
 				<tbody class="divide-y divide-gray-200 bg-white">
-					{#each submissions as submission (submission.id)}
+					{#each submissions as submission, i (submission.id)}
 						<tr>
+							<td class="whitespace-nowrap px-6 py-4 text-sm font-medium text-gray-900">{i + 1}</td>
 							<td class="whitespace-nowrap px-6 py-4 text-sm font-medium text-gray-900">
-								{submission.expand?.form?.formName || "N/A"}
+								{submission.expand?.form?.formName || 'N/A'}
 							</td>
 							<td class="whitespace-nowrap px-6 py-4 text-sm text-gray-500">
-								{submission.expand?.submittedBy?.email || "N/A"}
+								{submission.expand?.submittedBy?.name || 'N/A'}
 							</td>
 							<td class="whitespace-nowrap px-6 py-4 text-sm text-gray-500">
 								{new Date(submission.created).toLocaleString()}
