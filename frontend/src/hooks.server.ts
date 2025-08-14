@@ -19,14 +19,12 @@ export const handle: Handle = async ({ event, resolve }) => {
 	event.locals.pb = pb;
 	event.locals.user = pb.authStore.model;
 
-	console.log('pb.authStore.model:', pb.authStore.model);
-
 	const response = await resolve(event);
 
 	// Save updated auth to cookie
 	response.headers.set(
 		'set-cookie',
-		pb.authStore.exportToCookie({ httpOnly: true, sameSite: 'Lax', secure: true })
+		pb.authStore.exportToCookie({ httpOnly: true, sameSite: 'Lax', secure: false })
 	);
 
 	return response;
