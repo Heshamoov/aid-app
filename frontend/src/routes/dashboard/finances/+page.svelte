@@ -50,17 +50,11 @@
 	async function fetchFinancialData() {
 		try {
 			// Fetch donations
-			const donationsResult = await pb.collection('donations').getFullList({
-				sort: '-created',
-				expand: 'recorded_by'
-			});
+			const donationsResult = await pb.collection('donations').getFullList(20);
 			donations = donationsResult;
 
 			// Fetch expenses
-			const expensesResult = await pb.collection('expenses').getFullList({
-				sort: '-created',
-				expand: 'recorded_by,approved_by'
-			});
+			const expensesResult = await pb.collection('expenses').getFullList(20);
 			expenses = expensesResult;
 
 			// Calculate totals
@@ -79,7 +73,8 @@
 		try {
 			await pb.collection('donations').create({
 				...newDonation,
-				recorded_by: pb.authStore.model?.id
+				recorded_by: pb.authStore.model?.id,
+				approved_by: pb.authStore.model?.id
 			});
 			
 			// Reset form
