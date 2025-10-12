@@ -2,9 +2,8 @@
 	import { pb } from '$lib/api';
 	import { onMount } from 'svelte';
 
-	let familyCount = 0;
-	let totalPeople = 0;
-	let distributionCount = 0;
+	let submissionCount = 0;
+	let formCount = 0;
 	
 	// Financial data
 	let totalIncome = 0;
@@ -13,22 +12,27 @@
 	let recentTransactions = [];
 
 	onMount(async () => {
-		// Fetch the total number of family records
-		const familyResult = await pb.collection('families').getList(1, 1, {
-			fields: 'id' // We only need the count, so we fetch minimal data
-		});
-		familyCount = familyResult.totalItems;
+		// Fetch the total number of form records
+		try {
+			const formResult = await pb.collection('forms').getList(1, 1, {
+				fields: 'id'
+			});
+			formCount = formResult.totalItems;
+		} catch (error) {
+			console.error('Error fetching forms:', error);
+			formCount = 0;
+		}
 
-		// To get total people, we'd ideally have a dedicated API endpoint.
-		// For now, we'll just show the family count as a placeholder for this metric.
-		// A more advanced query would be needed to sum the 'familySize' field.
-		totalPeople = familyCount; // Placeholder
-
-		// Fetch the total number of distribution records
-		const distributionResult = await pb.collection('distributions').getList(1, 1, {
-			fields: 'id'
-		});
-		distributionCount = distributionResult.totalItems;
+		// Fetch the total number of submission records
+		try {
+			const submissionResult = await pb.collection('submissions').getList(1, 1, {
+				fields: 'id'
+			});
+			submissionCount = submissionResult.totalItems;
+		} catch (error) {
+			console.error('Error fetching submissions:', error);
+			submissionCount = 0;
+		}
 		
 		// Fetch financial data
 		await fetchFinancialData();
@@ -193,23 +197,42 @@
 				<div class="mb-8">
 					<h2 class="mb-4 text-xl font-semibold text-gray-900">Operations Overview</h2>
 					<div class="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
-					<!-- Total Families Card -->
+					<!-- Total Forms Card -->
 					<div class="overflow-hidden rounded-lg bg-white shadow">
 						<div class="p-5">
 							<div class="flex items-center">
 								<div class="ml-5 w-0 flex-1">
 									<dl>
 										<dt class="truncate text-sm font-medium text-gray-500">
-											Total Families Registered
+											Total Forms Created
 										</dt>
 										<dd>
-											<div class="text-3xl font-bold text-gray-900">{familyCount}</div>
+											<div class="text-3xl font-bold text-gray-900">{formCount}</div>
 										</dd>
 									</dl>
 								</div>
 							</div>
 						</div>
 					</div>
+					
+					<!-- Total Submissions Card -->
+					<div class="overflow-hidden rounded-lg bg-white shadow">
+						<div class="p-5">
+							<div class="flex items-center">
+								<div class="ml-5 w-0 flex-1">
+									<dl>
+										<dt class="truncate text-sm font-medium text-gray-500">
+											Total Submissions
+										</dt>
+										<dd>
+											<div class="text-3xl font-bold text-gray-900">{submissionCount}</div>
+										</dd>
+									</dl>
+								</div>
+							</div>
+						</div>
+					</div>
+					
 					<!-- Add this new card for viewing submissions -->
 					<div class="overflow-hidden rounded-lg bg-white shadow">
 						<div class="p-5">
@@ -231,39 +254,6 @@
 						</div>
 					</div>
 
-					<!-- Total People Assisted Card -->
-					<div class="overflow-hidden rounded-lg bg-white shadow">
-						<div class="p-5">
-							<div class="flex items-center">
-								<div class="ml-5 w-0 flex-1">
-									<dl>
-										<dt class="truncate text-sm font-medium text-gray-500">
-											Total People Assisted (Placeholder)
-										</dt>
-										<dd>
-											<div class="text-3xl font-bold text-gray-900">{totalPeople}</div>
-										</dd>
-									</dl>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<!-- Distributions Card -->
-					<div class="overflow-hidden rounded-lg bg-white shadow">
-						<div class="p-5">
-							<div class="flex items-center">
-								<div class="ml-5 w-0 flex-1">
-									<dl>
-										<dt class="truncate text-sm font-medium text-gray-500">Total Distributions</dt>
-										<dd>
-											<div class="text-3xl font-bold text-gray-900">{distributionCount}</div>
-										</dd>
-									</dl>
-								</div>
-							</div>
-						</div>
-					</div>
 					<!-- Inside the grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3 div -->
 					<!-- Add this new card -->
 					<div class="overflow-hidden rounded-lg bg-white shadow">
