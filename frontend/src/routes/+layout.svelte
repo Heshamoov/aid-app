@@ -4,7 +4,7 @@
 
   import Navbar from '$lib/components/Navbar.svelte';
 
-  // ✅ keep <html> dir/lang in sync with current locale
+  // keep <html> dir/lang in sync with current locale
   import { locale } from 'svelte-i18n';
   import { browser } from '$app/environment';
 

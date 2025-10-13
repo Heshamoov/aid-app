@@ -62,7 +62,7 @@
             on:click={handleLogout}
             class="rounded-md bg-red-500 px-3 py-1 text-sm font-medium text-white hover:bg-red-600"
           >
-            Logout
+            {$t('logout')}
           </button>
         {/if}
       </div>
