@@ -33,8 +33,6 @@
 		}).format(amount);
 	}
 
-	
-
 	// Data variables
 	let donations = [];
 	let expenses = [];
@@ -274,27 +272,29 @@
 									{$t('income_by_currency')}
 								</dt>
 								<dd>
-									<ul class="mt-3 divide-y divide-green-100 rounded-lg bg-white/60 backdrop-blur">
-										{#each incomeBreakdown.slice().sort(sortByAmountDesc) as item}
-											<li
-												class="flex items-center justify-between gap-2 rounded-md px-3 py-2 text-sm transition-all duration-300 hover:scale-[1.02] hover:bg-white/80"
-											>
-												<!-- Arabic/English currency name -->
-												<div class="flex items-center gap-2">
-													<span class="text-gray-700">{cname(item.currency)}</span>
-												</div>
-
-												<!-- Amount aligned left for Arabic layout -->
-												<div
-													class="font-semibold tabular-nums {item.amount >= 0
-														? 'text-green-900'
-														: 'text-red-700'} w-32 text-left ltr:text-right rtl:text-left"
+									{#key $locale}
+										<ul class="mt-3 divide-y divide-green-100 rounded-lg bg-white/60 backdrop-blur">
+											{#each incomeBreakdown.slice().sort(sortByAmountDesc) as item}
+												<li
+													class="flex items-center justify-between gap-2 rounded-md px-3 py-2 text-sm transition-all duration-300 hover:scale-[1.02] hover:bg-white/80"
 												>
-													{money(item.amount, item.currency)}
-												</div>
-											</li>
-										{/each}
-									</ul>
+													<!-- Arabic/English currency name -->
+													<div class="flex items-center gap-2">
+														<span class="text-gray-700">{cname(item.currency)}</span>
+													</div>
+
+													<!-- Amount aligned left for Arabic layout -->
+													<div
+														class="font-semibold tabular-nums {item.amount >= 0
+															? 'text-green-900'
+															: 'text-red-700'} w-32 text-left ltr:text-right rtl:text-left"
+													>
+														{money(item.amount, item.currency)}
+													</div>
+												</li>
+											{/each}
+										</ul>
+									{/key}
 								</dd>
 							</dl>
 						</div>
@@ -322,27 +322,29 @@
 								{$t('expenses_by_currency')}
 							</dt>
 							<dd>
-								<ul class="mt-3 divide-y divide-red-100 rounded-lg bg-white/60 backdrop-blur">
-									{#each expenseBreakdown.slice().sort(sortByAmountDesc) as item}
-										<li
-											class="flex items-center justify-between gap-2 rounded-md px-3 py-2 text-sm transition-all duration-300 hover:scale-[1.02] hover:bg-white/80"
-										>
-											<!-- Arabic/English currency name -->
-											<div class="flex items-center gap-2">
-												<span class="text-gray-700">{cname(item.currency)}</span>
-											</div>
-
-											<!-- Amount aligned left for Arabic layout -->
-											<div
-												class="font-semibold tabular-nums {item.amount >= 0
-													? 'text-green-900'
-													: 'text-red-700'} w-32 text-left ltr:text-right rtl:text-left"
+								{#key $locale}
+									<ul class="mt-3 divide-y divide-red-100 rounded-lg bg-white/60 backdrop-blur">
+										{#each expenseBreakdown.slice().sort(sortByAmountDesc) as item}
+											<li
+												class="flex items-center justify-between gap-2 rounded-md px-3 py-2 text-sm transition-all duration-300 hover:scale-[1.02] hover:bg-white/80"
 											>
-												{money(item.amount, item.currency)}
-											</div>
-										</li>
-									{/each}
-								</ul>
+												<!-- Arabic/English currency name -->
+												<div class="flex items-center gap-2">
+													<span class="text-gray-700">{cname(item.currency)}</span>
+												</div>
+
+												<!-- Amount aligned left for Arabic layout -->
+												<div
+													class="font-semibold tabular-nums {item.amount >= 0
+														? 'text-green-900'
+														: 'text-red-700'} w-32 text-left ltr:text-right rtl:text-left"
+												>
+													{money(item.amount, item.currency)}
+												</div>
+											</li>
+										{/each}
+									</ul>
+								{/key}
 							</dd>
 						</div>
 					</div>
@@ -374,27 +376,29 @@
 								{$t('balance_by_currency')}
 							</dt>
 							<dd>
-								<ul class="mt-3 divide-y divide-blue-100 rounded-lg bg-white/60 backdrop-blur">
-									{#each balanceBreakdown.slice().sort(sortByAmountDesc) as item}
-										<li
-											class="flex items-center justify-between gap-2 rounded-md px-3 py-2 text-sm transition-all duration-300 hover:scale-[1.02] hover:bg-white/80"
-										>
-											<!-- Arabic/English currency name -->
-											<div class="flex items-center gap-2">
-												<span class="text-gray-700">{cname(item.currency)}</span>
-											</div>
-
-											<!-- Amount aligned left for Arabic layout -->
-											<div
-												class="font-semibold tabular-nums {item.amount >= 0
-													? 'text-green-900'
-													: 'text-red-700'} w-32 text-left ltr:text-right rtl:text-left"
+								{#key $locale}
+									<ul class="mt-3 divide-y divide-blue-100 rounded-lg bg-white/60 backdrop-blur">
+										{#each balanceBreakdown.slice().sort(sortByAmountDesc) as item}
+											<li
+												class="flex items-center justify-between gap-2 rounded-md px-3 py-2 text-sm transition-all duration-300 hover:scale-[1.02] hover:bg-white/80"
 											>
-												{money(item.amount, item.currency)}
-											</div>
-										</li>
-									{/each}
-								</ul>
+												<!-- Arabic/English currency name -->
+												<div class="flex items-center gap-2">
+													<span class="text-gray-700">{cname(item.currency)}</span>
+												</div>
+
+												<!-- Amount aligned left for Arabic layout -->
+												<div
+													class="font-semibold tabular-nums {item.amount >= 0
+														? 'text-green-900'
+														: 'text-red-700'} w-32 text-left ltr:text-right rtl:text-left"
+												>
+													{money(item.amount, item.currency)}
+												</div>
+											</li>
+										{/each}
+									</ul>
+								{/key}
 							</dd>
 						</div>
 					</div>
