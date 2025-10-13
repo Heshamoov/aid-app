@@ -12,8 +12,7 @@
 		USD: '🇺🇸',
 		EUR: '🇪🇺',
 		AED: '🇦🇪',
-		SAR: '🇸🇦',
-		GBP: '🇬🇧'
+		SAR: '🇸🇦'
 	};
 
 	const sortByAmountDesc = (a, b) => b.amount - a.amount;
@@ -47,7 +46,7 @@
 		donor_name: '',
 		donor_organization: '',
 		amount: 0,
-		currency: 'USD',
+		currency: 'SYP',
 		payment_method: 'Cash',
 		purpose: '',
 		receipt_number: '',
@@ -60,7 +59,7 @@
 	let newExpense = {
 		category: 'Medical Supplies',
 		amount: 0,
-		currency: 'USD',
+		currency: 'SYP',
 		vendor_supplier: '',
 		receipt_invoice_number: '',
 		project_campaign: '',
@@ -137,7 +136,7 @@
 				donor_name: '',
 				donor_organization: '',
 				amount: 0,
-				currency: 'USD',
+				currency: 'SYP',
 				payment_method: 'Cash',
 				purpose: '',
 				receipt_number: '',
@@ -164,7 +163,7 @@
 			newExpense = {
 				category: 'Medical Supplies',
 				amount: 0,
-				currency: 'USD',
+				currency: 'SYP',
 				vendor_supplier: '',
 				receipt_invoice_number: '',
 				project_campaign: '',
@@ -478,12 +477,11 @@
 							bind:value={newDonation.currency}
 							class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-green-500 focus:ring-green-500 sm:text-sm"
 						>
+							<option value="SYP">SYP</option>
 							<option value="USD">USD</option>
 							<option value="EUR">EUR</option>
-							<option value="GBP">GBP</option>
 							<option value="SAR">SAR</option>
 							<option value="AED">AED</option>
-							<option value="JOD">JOD</option>
 						</select>
 					</div>
 					<div>
@@ -590,12 +588,11 @@
 							bind:value={newExpense.currency}
 							class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-red-500 focus:ring-red-500 sm:text-sm"
 						>
+							<option value="SYP">SYP</option>
 							<option value="USD">USD</option>
 							<option value="EUR">EUR</option>
-							<option value="GBP">GBP</option>
 							<option value="SAR">SAR</option>
 							<option value="AED">AED</option>
-							<option value="JOD">JOD</option>
 						</select>
 					</div>
 					<div>
@@ -689,6 +686,7 @@
 					class="block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
 				>
 					<option value="all">All Currencies</option>
+					<option value="SYP">SYP</option>
 					<option value="USD">USD</option>
 					<option value="EUR">EUR</option>
 					<option value="SAR">SAR</option>

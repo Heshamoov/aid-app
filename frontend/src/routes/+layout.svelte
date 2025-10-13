@@ -1,22 +1,26 @@
 <script lang="ts">
-  import '$lib/i18n';
-  import '../app.css';
+	import '$lib/i18n';
+	import '../app.css';
+	import { dev } from '$app/environment';
+	import { injectAnalytics } from '@vercel/analytics/sveltekit';
 
-  import Navbar from '$lib/components/Navbar.svelte';
+	injectAnalytics({ mode: dev ? 'development' : 'production' });
 
-  // keep <html> dir/lang in sync with current locale
-  import { locale } from 'svelte-i18n';
-  import { browser } from '$app/environment';
+	import Navbar from '$lib/components/Navbar.svelte';
 
-  $: if (browser) {
-    document.documentElement.setAttribute('dir', $locale === 'ar' ? 'rtl' : 'ltr');
-    document.documentElement.setAttribute('lang', $locale);
-  }
+	// keep <html> dir/lang in sync with current locale
+	import { locale } from 'svelte-i18n';
+	import { browser } from '$app/environment';
+
+	$: if (browser) {
+		document.documentElement.setAttribute('dir', $locale === 'ar' ? 'rtl' : 'ltr');
+		document.documentElement.setAttribute('lang', $locale);
+	}
 </script>
 
 <div class="min-h-screen bg-gray-100">
-  <Navbar />
-  <main>
-    <slot />
-  </main>
+	<Navbar />
+	<main>
+		<slot />
+	</main>
 </div>
