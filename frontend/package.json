@@ -38,6 +38,7 @@
 		"vite": "^7.0.4"
 	},
 	"dependencies": {
-		"pocketbase": "^0.26.2"
+		"pocketbase": "^0.26.2",
+		"svelte-i18n": "^4.0.1"
 	}
 }
