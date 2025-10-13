@@ -5,10 +5,10 @@ import type { Admin, Record, User } from 'pocketbase';
 // import { PUBLIC_PB_URL } from '$env/static/public';
 
 // Point this to the URL of your running PocketBase instance
-export const pb = new PocketBase('http://127.0.0.1:8090' );
+// export const pb = new PocketBase('http://127.0.0.1:8090' );
 
 // Online production
-// export const pb = new PocketBase(PUBLIC_PB_URL);
+export const pb = new PocketBase(PUBLIC_PB_URL);
 
 
 // Create a writable Svelte store to hold the auth state
