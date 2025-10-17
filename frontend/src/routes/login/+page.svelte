@@ -1,11 +1,23 @@
 <script lang="ts">
 	import { goto } from '$app/navigation';
-	import { authStore, login } from '$lib/api';
+	import { page } from '$app/stores';
+	import { onMount } from 'svelte';
+	import { authStore, login, pb } from '$lib/api';
+	import { t } from 'svelte-i18n';
 
 	let email = '';
 	let password = '';
 	let errorMessage = '';
 	let isLoading = false;
+
+	// Check if user is already logged in
+	onMount(() => {
+		if (pb.authStore.isValid && pb.authStore.model) {
+			// User is already logged in, redirect to dashboard
+			const redirect = $page.url.searchParams.get('redirect') || '/dashboard';
+			goto(redirect);
+		}
+	});
 
 	async function handleLogin() {
 		isLoading = true;
@@ -13,9 +25,11 @@
 		const { success } = await login(email, password);
 
 		if (success) {
-			location.href = '/'; // Forces a full reload, sends cookie to server
+			// Get redirect URL from query params or default to dashboard
+			const redirect = $page.url.searchParams.get('redirect') || '/dashboard';
+			goto(redirect);
 		} else {
-			errorMessage = 'Login failed. Please check your email and password.';
+			errorMessage = $t('login_failed_message');
 		}
 		isLoading = false;
 	}
@@ -25,13 +39,13 @@
 	<div class="w-full max-w-md space-y-8 rounded-lg bg-white p-10 shadow-lg">
 		<div>
 			<h2 class="mt-6 text-center text-3xl font-bold tracking-tight text-gray-900">
-				Sign in to your account
+				{$t('sign_in_to_account')}
 			</h2>
 		</div>
 		<form class="mt-8 space-y-6" on:submit|preventDefault={handleLogin}>
 			<div class="space-y-4 rounded-md shadow-sm">
 				<div>
-					<label for="email-address" class="sr-only">Email address</label>
+					<label for="email-address" class="sr-only">{$t('email_address')}</label>
 					<input
 						id="email-address"
 						name="email"
@@ -40,11 +54,11 @@
 						required
 						bind:value={email}
 						class="relative block w-full appearance-none rounded-md border border-gray-300 px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
-						placeholder="Email address"
+						placeholder={$t('email_address')}
 					/>
 				</div>
 				<div>
-					<label for="password" class="sr-only">Password</label>
+					<label for="password" class="sr-only">{$t('password')}</label>
 					<input
 						id="password"
 						name="password"
@@ -53,7 +67,7 @@
 						required
 						bind:value={password}
 						class="relative block w-full appearance-none rounded-md border border-gray-300 px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
-						placeholder="Password"
+						placeholder={$t('password')}
 					/>
 				</div>
 			</div>
@@ -69,12 +83,13 @@
 					class="group relative flex w-full justify-center rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-sm font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 disabled:bg-indigo-400"
 				>
 					{#if isLoading}
-						Signing in...
+						{$t('signing_in')}
 					{:else}
-						Sign in
+						{$t('sign_in')}
 					{/if}
 				</button>
 			</div>
 		</form>
 	</div>
 </div>
+

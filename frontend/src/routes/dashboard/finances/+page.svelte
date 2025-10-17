@@ -2,6 +2,8 @@
 	import { pb } from '$lib/api';
 	import { onMount } from 'svelte';
 	import { t, locale } from 'svelte-i18n';
+	import { page } from '$app/stores';
+	import { goto } from '$app/navigation';
 
 	function isAr() {
 		return $locale?.startsWith('ar');
@@ -44,6 +46,7 @@
 	let showDonationForm = false;
 	let newDonation = {
 		donor_name: '',
+		transaction_date: new Date().toISOString().split('T')[0],
 		donor_organization: '',
 		amount: 0,
 		currency: 'SYP',
@@ -58,6 +61,7 @@
 	let showExpenseForm = false;
 	let newExpense = {
 		category: 'Medical Supplies',
+		transaction_date: new Date().toISOString().split('T')[0],
 		amount: 0,
 		currency: 'SYP',
 		vendor_supplier: '',
@@ -75,6 +79,16 @@
 	onMount(async () => {
 		await fetchFinancialData();
 		loading = false;
+		
+		// Check URL parameters for auto-opening forms
+		const action = $page.url.searchParams.get('action');
+		if (action === 'add-donation') {
+			showDonationForm = true;
+			goto('/dashboard/finances', { replaceState: true });
+		} else if (action === 'add-expense') {
+			showExpenseForm = true;
+			goto('/dashboard/finances', { replaceState: true });
+		}
 	});
 
 	let incomeBreakdown: { currency: string; amount: number }[] = [];
@@ -134,6 +148,7 @@
 			// Reset form
 			newDonation = {
 				donor_name: '',
+				transaction_date: new Date().toISOString().split('T')[0],
 				donor_organization: '',
 				amount: 0,
 				currency: 'SYP',
@@ -162,6 +177,7 @@
 			// Reset form
 			newExpense = {
 				category: 'Medical Supplies',
+				transaction_date: new Date().toISOString().split('T')[0],
 				amount: 0,
 				currency: 'SYP',
 				vendor_supplier: '',
@@ -191,7 +207,10 @@
 	}
 
 	function formatDate(dateString: string) {
-		return new Date(dateString).toLocaleDateString();
+		if (!dateString || dateString === "") return "-";
+		const date = new Date(dateString);
+		if (isNaN(date.getTime())) return "-";
+		return date.toLocaleDateString();
 	}
 
 	function formatCurrency(amount: number, currency: string = 'USD') {
@@ -220,20 +239,6 @@
 </script>
 
 <div class="mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8">
-	<!-- Back to Dashboard Button -->
-	<div class="mb-4">
-		<a
-			href="/dashboard"
-			class="inline-flex items-center rounded-md border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
-		>
-			<svg class="mr-2 h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-				<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"
-				></path>
-			</svg>
-			{$t('back_to_dashboard')}
-		</a>
-	</div>
-
 	<h1 class="mb-6 text-3xl font-bold text-gray-900">Financial Management</h1>
 
 	{#if loading}
@@ -461,6 +466,15 @@
 						/>
 					</div>
 					<div>
+						<label class="block text-sm font-medium text-gray-700">Transaction Date *</label>
+						<input
+							type="date"
+							bind:value={newDonation.transaction_date}
+							class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-green-500 focus:ring-green-500 sm:text-sm"
+							required
+						/>
+					</div>
+					<div>
 						<label class="block text-sm font-medium text-gray-700">Amount *</label>
 						<input
 							type="number"
@@ -572,6 +586,15 @@
 						</select>
 					</div>
 					<div>
+					<div>
+						<label class="block text-sm font-medium text-gray-700">Transaction Date *</label>
+						<input
+							type="date"
+							bind:value={newExpense.transaction_date}
+							class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-red-500 focus:ring-red-500 sm:text-sm"
+							required
+						/>
+					</div>
 						<label class="block text-sm font-medium text-gray-700">Amount *</label>
 						<input
 							type="number"
@@ -697,59 +720,84 @@
 
 		<!-- Donations Table -->
 		{#if currentTab === 'donations'}
-			<div class="overflow-hidden shadow ring-1 ring-black ring-opacity-5 md:rounded-lg">
+			<div class="overflow-x-auto overflow-hidden shadow ring-1 ring-black ring-opacity-5 md:rounded-lg">
 				<table class="min-w-full divide-y divide-gray-300">
 					<thead class="bg-gray-50">
 						<tr>
 							<th
-								class="px-6 py-3 text-left text-xs font-medium uppercase tracking-wide text-gray-500"
+								class="px-4 py-3 text-left text-xs font-medium uppercase tracking-wide text-gray-500"
 								>Donor</th
 							>
 							<th
-								class="px-6 py-3 text-left text-xs font-medium uppercase tracking-wide text-gray-500"
+								class="px-4 py-3 text-left text-xs font-medium uppercase tracking-wide text-gray-500"
+								>Organization</th
+							>
+							<th
+								class="px-4 py-3 text-left text-xs font-medium uppercase tracking-wide text-gray-500"
 								>Amount</th
 							>
 							<th
-								class="px-6 py-3 text-left text-xs font-medium uppercase tracking-wide text-gray-500"
+								class="px-4 py-3 text-left text-xs font-medium uppercase tracking-wide text-gray-500"
 								>Method</th
 							>
 							<th
-								class="px-6 py-3 text-left text-xs font-medium uppercase tracking-wide text-gray-500"
+								class="px-4 py-3 text-left text-xs font-medium uppercase tracking-wide text-gray-500"
 								>Purpose</th
 							>
 							<th
-								class="px-6 py-3 text-left text-xs font-medium uppercase tracking-wide text-gray-500"
+								class="px-4 py-3 text-left text-xs font-medium uppercase tracking-wide text-gray-500"
+								>Receipt #</th
+							>
+							<th
+								class="px-4 py-3 text-left text-xs font-medium uppercase tracking-wide text-gray-500"
+								>Contact</th
+							>
+							<th
+								class="px-4 py-3 text-left text-xs font-medium uppercase tracking-wide text-gray-500"
 								>Date</th
+							>
+							<th
+								class="px-4 py-3 text-left text-xs font-medium uppercase tracking-wide text-gray-500"
+								>Notes</th
 							>
 						</tr>
 					</thead>
 					<tbody class="divide-y divide-gray-200 bg-white">
 						{#each filteredDonations as donation (donation.id)}
 							<tr>
-								<td class="whitespace-nowrap px-6 py-4 text-sm text-gray-900">
+								<td class="whitespace-nowrap px-4 py-4 text-sm text-gray-900">
 									<div class="font-medium">{donation.donor_name}</div>
-									{#if donation.donor_organization}
-										<div class="text-gray-500">{donation.donor_organization}</div>
-									{/if}
 								</td>
-								<td class="whitespace-nowrap px-6 py-4 text-sm">
+								<td class="whitespace-nowrap px-4 py-4 text-sm text-gray-500">
+									{donation.donor_organization || '-'}
+								</td>
+								<td class="whitespace-nowrap px-4 py-4 text-sm">
 									<span
 										class="block font-medium tabular-nums text-green-600 ltr:text-right rtl:text-left"
 									>
 										{money(donation.amount, donation.currency)}
 									</span>
 								</td>
-								<td class="whitespace-nowrap px-6 py-4 text-sm text-gray-500"
+								<td class="whitespace-nowrap px-4 py-4 text-sm text-gray-500"
 									>{donation.payment_method}</td
 								>
-								<td class="px-6 py-4 text-sm text-gray-500">{donation.purpose || '-'}</td>
-								<td class="whitespace-nowrap px-6 py-4 text-sm text-gray-500"
-									>{formatDate(donation.created)}</td
+								<td class="px-4 py-4 text-sm text-gray-500">{donation.purpose || '-'}</td>
+								<td class="whitespace-nowrap px-4 py-4 text-sm text-gray-500">
+									{donation.receipt_number || '-'}
+								</td>
+								<td class="whitespace-nowrap px-4 py-4 text-sm text-gray-500">
+									{donation.donor_contact || '-'}
+								</td>
+								<td class="whitespace-nowrap px-4 py-4 text-sm text-gray-500"
+									>{formatDate(donation.transaction_date || donation.created)}</td
 								>
+								<td class="px-4 py-4 text-sm text-gray-500 max-w-xs truncate">
+									{donation.notes || '-'}
+								</td>
 							</tr>
 						{:else}
 							<tr>
-								<td colspan="5" class="px-6 py-4 text-center text-sm text-gray-500"
+								<td colspan="9" class="px-6 py-4 text-center text-sm text-gray-500"
 									>No donations found</td
 								>
 							</tr>
@@ -822,7 +870,7 @@
 									</span>
 								</td>
 								<td class="whitespace-nowrap px-6 py-4 text-sm text-gray-500"
-									>{formatDate(expense.created)}</td
+									>{formatDate(expense.transaction_date || expense.created)}</td
 								>
 								<td class="whitespace-nowrap px-6 py-4 text-sm text-gray-500">
 									{#if expense.status === 'Pending'}

@@ -4,6 +4,7 @@
 	import { t, locale } from 'svelte-i18n';
 
 	let submissionCount = 0;
+	let userCount = 0;
 	let formCount = 0;
 
 	// Financial data
@@ -73,6 +74,17 @@
 		} catch (error) {
 			console.error('Error fetching submissions:', error);
 			submissionCount = 0;
+		}
+
+		// Fetch the total number of users
+		try {
+			const userResult = await pb.collection('users').getList(1, 1, {
+				fields: 'id'
+			});
+			userCount = userResult.totalItems;
+		} catch (error) {
+			console.error('Error fetching users:', error);
+			userCount = 0;
 		}
 
 		// Fetch financial data
@@ -178,7 +190,7 @@
 					<h2 class="mb-4 text-xl font-semibold text-gray-900">{$t('financial_overview')}</h2>
 					<div class="grid grid-cols-1 gap-5 sm:grid-cols-3">
 						<!-- Income by Currency -->
-						<div class="overflow-hidden rounded-2xl bg-green-50 shadow transition-all duration-300 hover:shadow-lg hover:-translate-y-1 hover:bg-green-100/70">
+						<a href="/dashboard/finances?action=add-donation" class="block overflow-hidden rounded-2xl bg-green-50 shadow transition-all duration-300 hover:shadow-lg hover:-translate-y-1 hover:bg-green-100/70 cursor-pointer">
 							<div class="p-5">
 								<div class="flex items-center">
 									<div class="flex-shrink-0">
@@ -229,10 +241,10 @@
 									</div>
 								</div>
 							</div>
-						</div>
+						</a>
 
 						<!-- Expenses by Currency -->
-						<div class="overflow-hidden rounded-2xl bg-red-50 shadow transition-all duration-300 hover:shadow-lg hover:-translate-y-1 hover:bg-red-100/70">
+						<a href="/dashboard/finances?action=add-expense" class="block overflow-hidden rounded-2xl bg-red-50 shadow transition-all duration-300 hover:shadow-lg hover:-translate-y-1 hover:bg-red-100/70 cursor-pointer">
 							<div class="p-5">
 								<div class="flex items-center">
 									<svg
@@ -277,7 +289,7 @@
 									</div>
 								</div>
 							</div>
-						</div>
+						</a>
 
 						<!-- Balance by Currency -->
 						<div class="overflow-hidden rounded-2xl bg-blue-50 shadow transition-all duration-300 hover:shadow-lg hover:-translate-y-1 hover:bg-blue-100/70">
@@ -348,96 +360,71 @@
 						</div>
 					</div>
 
-					<!-- Key Metric Cards -->
-					<div class="mb-8">
-						<h2 class="mb-4 text-xl font-semibold text-gray-900">{$t('operations_overview')}</h2>
-						<div class="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
-							<!-- Total Forms Card -->
-							<div class="overflow-hidden rounded-lg bg-white shadow">
-								<div class="p-5">
-									<div class="flex items-center">
-										<div class="ml-5 w-0 flex-1">
-											<dl>
-												<dt class="truncate text-sm font-medium text-gray-500">
-													{$t('total_forms_created')}
-												</dt>
-												<dd>
-													<div class="text-3xl font-bold text-gray-900">{formCount}</div>
-												</dd>
-											</dl>
-										</div>
-									</div>
+				<!-- Operations Overview -->
+				<div class="mb-8">
+					<h2 class="mb-4 text-xl font-semibold text-gray-900">{$t('operations_overview')}</h2>
+					<div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+						<!-- Forms Card -->
+						<a href="/dashboard/forms" class="group block overflow-hidden rounded-xl bg-gradient-to-br from-indigo-500 to-indigo-600 p-6 shadow-lg transition-all duration-300 hover:shadow-2xl hover:-translate-y-1">
+							<div class="flex items-center justify-between">
+								<div>
+									<p class="text-sm font-medium text-indigo-100">Forms</p>
+									<p class="mt-2 text-4xl font-bold text-white">{num(formCount)}</p>
+								</div>
+								<div class="rounded-full bg-white/20 p-3">
+									<svg class="h-8 w-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+										<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+									</svg>
 								</div>
 							</div>
+						</a>
 
-							<!-- Total Submissions Card -->
-							<div class="overflow-hidden rounded-lg bg-white shadow">
-								<div class="p-5">
-									<div class="flex items-center">
-										<div class="ml-5 w-0 flex-1">
-											<dl>
-												<dt class="truncate text-sm font-medium text-gray-500">
-													{$t('total_submissions')}
-												</dt>
-												<dd>
-													<div class="text-3xl font-bold text-gray-900">{submissionCount}</div>
-												</dd>
-											</dl>
-										</div>
-									</div>
+						<!-- Submissions Card -->
+						<a href="/dashboard/submissions" class="group block overflow-hidden rounded-xl bg-gradient-to-br from-teal-500 to-teal-600 p-6 shadow-lg transition-all duration-300 hover:shadow-2xl hover:-translate-y-1">
+							<div class="flex items-center justify-between">
+								<div>
+									<p class="text-sm font-medium text-teal-100">Submissions</p>
+									<p class="mt-2 text-4xl font-bold text-white">{num(submissionCount)}</p>
+								</div>
+								<div class="rounded-full bg-white/20 p-3">
+									<svg class="h-8 w-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+										<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"/>
+									</svg>
 								</div>
 							</div>
+						</a>
 
-							<!-- Add this new card for viewing submissions -->
-							<div class="overflow-hidden rounded-lg bg-white shadow">
-								<div class="p-5">
-									<div class="flex items-center">
-										<div class="ml-5 w-0 flex-1">
-											<dl>
-												<dt class="truncate text-sm font-medium text-gray-500">
-													{$t('view_data')}
-												</dt>
-												<dd>
-													<a
-														href="/dashboard/submissions"
-														class="text-3xl font-bold text-teal-600 hover:text-teal-700"
-													>
-														{$t('view_submissions')}
-													</a>
-												</dd>
-											</dl>
-										</div>
-									</div>
+						<!-- Users Card -->
+						<a href="/dashboard/users" class="group block overflow-hidden rounded-xl bg-gradient-to-br from-purple-500 to-purple-600 p-6 shadow-lg transition-all duration-300 hover:shadow-2xl hover:-translate-y-1">
+							<div class="flex items-center justify-between">
+								<div>
+									<p class="text-sm font-medium text-purple-100">Users</p>
+									<p class="mt-2 text-4xl font-bold text-white">{num(userCount)}</p>
+								</div>
+								<div class="rounded-full bg-white/20 p-3">
+									<svg class="h-8 w-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+										<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"/>
+									</svg>
 								</div>
 							</div>
+						</a>
 
-							<!-- Inside the grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3 div -->
-							<!-- Add this new card -->
-							<div class="overflow-hidden rounded-lg bg-white shadow">
-								<div class="p-5">
-									<div class="flex items-center">
-										<div class="ml-5 w-0 flex-1">
-											<dl>
-												<dt class="truncate text-sm font-medium text-gray-500">
-													{$t('form_builder')}
-												</dt>
-												<dd>
-													<a
-														href="/dashboard/forms"
-														class="text-3xl font-bold text-indigo-600 hover:text-indigo-700"
-													>
-														{$t('manage_forms')}
-													</a>
-												</dd>
-											</dl>
-										</div>
-									</div>
+						<!-- Finances Card -->
+						<a href="/dashboard/finances" class="group block overflow-hidden rounded-xl bg-gradient-to-br from-emerald-500 to-emerald-600 p-6 shadow-lg transition-all duration-300 hover:shadow-2xl hover:-translate-y-1">
+							<div class="flex items-center justify-between">
+								<div>
+									<p class="text-sm font-medium text-emerald-100">Balance</p>
+									<p class="mt-2 text-2xl font-bold text-white">{money(currentBalance, 'USD')}</p>
+								</div>
+								<div class="rounded-full bg-white/20 p-3">
+									<svg class="h-8 w-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+										<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+									</svg>
 								</div>
 							</div>
-						</div>
+						</a>
 					</div>
 				</div>
-			</div>
 		</div>
 	</main>
 </div>

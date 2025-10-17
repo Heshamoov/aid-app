@@ -1,0 +1,901 @@
+nohup: ignoring input
+
+> frontend@0.0.1 dev /home/ubuntu/aid-app/frontend
+> vite dev
+
+
+  VITE v7.1.2  ready in 956 ms
+
+  ➜  Local:   http://localhost:5173/
+  ➜  Network: use --host to expose
+6:05:48 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:447:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+6:05:48 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:456:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+6:05:48 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:464:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+6:05:48 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:475:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+6:05:48 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:488:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+6:05:48 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:500:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+6:05:48 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:508:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+6:05:48 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:516:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+6:05:48 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:524:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+6:05:48 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:555:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+6:05:48 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:575:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+6:05:48 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:586:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+6:05:48 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:599:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+6:05:48 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:607:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+6:05:48 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:615:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+6:05:48 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:623:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+6:05:49 AM [vite-plugin-svelte] src/routes/dashboard/users/+page.svelte:318:3 Visible, non-interactive elements with a click event must be accompanied by a keyboard event handler. Consider whether an interactive element such as `<button type="button">` or `<a>` might be more appropriate
+https://svelte.dev/e/a11y_click_events_have_key_events
+6:05:49 AM [vite-plugin-svelte] src/routes/dashboard/users/+page.svelte:318:3 `<div>` with a click handler must have an ARIA role
+https://svelte.dev/e/a11y_no_static_element_interactions
+6:08:32 AM [vite] (client) hmr update /src/routes/dashboard/+page.svelte, /src/app.css
+6:08:32 AM [vite] (ssr) page reload src/routes/dashboard/+page.svelte
+6:10:50 AM [vite] (client) hmr update /src/lib/components/Navbar.svelte, /src/app.css
+6:10:50 AM [vite] (ssr) page reload src/lib/components/Navbar.svelte
+6:12:53 AM [vite] (client) hmr update /src/routes/dashboard/forms/+page.svelte, /src/app.css
+6:12:53 AM [vite] (ssr) page reload src/routes/dashboard/forms/+page.svelte
+6:16:08 AM [vite-plugin-svelte] src/routes/dashboard/users/+page.svelte:320:3 Visible, non-interactive elements with a click event must be accompanied by a keyboard event handler. Consider whether an interactive element such as `<button type="button">` or `<a>` might be more appropriate
+https://svelte.dev/e/a11y_click_events_have_key_events
+6:16:08 AM [vite-plugin-svelte] src/routes/dashboard/users/+page.svelte:320:3 `<div>` with a click handler must have an ARIA role
+https://svelte.dev/e/a11y_no_static_element_interactions
+6:16:08 AM [vite] (client) hmr update /src/routes/dashboard/users/+page.svelte, /src/app.css
+6:16:08 AM [vite] (ssr) page reload src/routes/dashboard/users/+page.svelte
+6:16:08 AM [vite-plugin-svelte] src/routes/dashboard/users/+page.svelte:320:3 Visible, non-interactive elements with a click event must be accompanied by a keyboard event handler. Consider whether an interactive element such as `<button type="button">` or `<a>` might be more appropriate
+https://svelte.dev/e/a11y_click_events_have_key_events
+6:16:08 AM [vite-plugin-svelte] src/routes/dashboard/users/+page.svelte:320:3 `<div>` with a click handler must have an ARIA role
+https://svelte.dev/e/a11y_no_static_element_interactions
+6:16:48 AM [vite] (client) page reload src/locales/en.json
+6:16:48 AM [vite] (ssr) page reload src/locales/en.json
+6:17:01 AM [vite] (client) page reload src/locales/ar.json
+6:17:01 AM [vite] (ssr) page reload src/locales/ar.json
+6:20:27 AM [vite-plugin-svelte] src/routes/dashboard/forms/+page.svelte:246:11 Buttons and links should either contain text or have an `aria-label` or `aria-labelledby` attribute
+https://svelte.dev/e/a11y_consider_explicit_label
+6:20:27 AM [vite-plugin-svelte] src/routes/dashboard/forms/+page.svelte:296:3 Visible, non-interactive elements with a click event must be accompanied by a keyboard event handler. Consider whether an interactive element such as `<button type="button">` or `<a>` might be more appropriate
+https://svelte.dev/e/a11y_click_events_have_key_events
+6:20:27 AM [vite-plugin-svelte] src/routes/dashboard/forms/+page.svelte:296:3 `<div>` with a click handler must have an ARIA role
+https://svelte.dev/e/a11y_no_static_element_interactions
+6:20:27 AM [vite-plugin-svelte] src/routes/dashboard/forms/+page.svelte:349:3 Visible, non-interactive elements with a click event must be accompanied by a keyboard event handler. Consider whether an interactive element such as `<button type="button">` or `<a>` might be more appropriate
+https://svelte.dev/e/a11y_click_events_have_key_events
+6:20:27 AM [vite-plugin-svelte] src/routes/dashboard/forms/+page.svelte:349:3 `<div>` with a click handler must have an ARIA role
+https://svelte.dev/e/a11y_no_static_element_interactions
+6:20:27 AM [vite-plugin-svelte] src/routes/dashboard/forms/+page.svelte:368:7 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+6:20:27 AM [vite-plugin-svelte] src/routes/dashboard/forms/+page.svelte:396:8 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+6:20:27 AM [vite-plugin-svelte] src/routes/dashboard/forms/+page.svelte:410:12 Buttons and links should either contain text or have an `aria-label` or `aria-labelledby` attribute
+https://svelte.dev/e/a11y_consider_explicit_label
+6:20:27 AM [vite] (client) hmr update /src/routes/dashboard/forms/+page.svelte, /src/app.css
+6:20:27 AM [vite] (ssr) page reload src/routes/dashboard/forms/+page.svelte
+6:22:57 AM [vite] (client) page reload .svelte-kit/generated/client/nodes/2.js
+6:22:57 AM [vite] (client) page reload .svelte-kit/generated/client/nodes/3.js
+6:22:57 AM [vite] (client) page reload .svelte-kit/generated/client/nodes/4.js
+6:22:57 AM [vite] (client) page reload .svelte-kit/generated/client/nodes/5.js
+6:22:57 AM [vite] (client) page reload .svelte-kit/generated/client/nodes/6.js
+6:22:57 AM [vite] (client) page reload .svelte-kit/generated/client/nodes/8.js
+6:22:57 AM [vite] (client) page reload .svelte-kit/generated/client/nodes/9.js
+6:22:57 AM [vite] (client) page reload .svelte-kit/generated/client/app.js
+6:22:57 AM [vite] (client) hmr update /.svelte-kit/generated/root.svelte
+6:22:57 AM [vite] (ssr) page reload .svelte-kit/generated/root.svelte
+6:23:20 AM [vite] (client) hmr update /src/routes/login/+page.svelte, /src/app.css
+6:23:20 AM [vite] (ssr) page reload src/routes/login/+page.svelte
+6:23:41 AM [vite] (client) hmr update /src/lib/components/Navbar.svelte, /src/app.css
+6:23:41 AM [vite] (ssr) page reload src/lib/components/Navbar.svelte
+6:23:56 AM [vite] (client) hmr update /src/routes/+page.svelte, /src/app.css
+6:23:56 AM [vite] (ssr) page reload src/routes/+page.svelte
+6:24:14 AM [vite] (client) page reload .svelte-kit/generated/client/nodes/3.js
+6:24:14 AM [vite] (client) page reload .svelte-kit/generated/client/nodes/4.js
+6:24:14 AM [vite] (client) page reload .svelte-kit/generated/client/nodes/5.js
+6:24:14 AM [vite] (client) page reload .svelte-kit/generated/client/nodes/6.js
+6:24:14 AM [vite] (client) page reload .svelte-kit/generated/client/nodes/7.js
+6:24:14 AM [vite] (client) page reload .svelte-kit/generated/client/nodes/8.js
+6:24:14 AM [vite] (client) page reload .svelte-kit/generated/client/nodes/9.js
+6:24:14 AM [vite] (client) page reload .svelte-kit/generated/client/nodes/10.js
+6:24:14 AM [vite] (client) page reload .svelte-kit/generated/client/app.js
+6:25:57 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:449:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+6:25:57 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:458:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+6:25:57 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:466:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+6:25:57 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:477:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+6:25:57 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:490:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+6:25:57 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:502:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+6:25:57 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:510:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+6:25:57 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:518:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+6:25:57 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:526:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+6:25:57 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:557:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+6:25:57 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:577:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+6:25:57 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:588:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+6:25:57 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:601:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+6:25:57 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:609:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+6:25:57 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:617:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+6:25:57 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:625:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+6:25:57 AM [vite] (client) hmr update /src/routes/dashboard/finances/+page.svelte, /src/app.css
+6:25:57 AM [vite] (ssr) page reload src/routes/dashboard/finances/+page.svelte
+6:26:08 AM [vite] (ssr) page reload src/routes/dashboard/finances/+page.svelte
+6:26:27 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:447:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+6:26:27 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:456:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+6:26:27 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:464:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+6:26:27 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:475:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+6:26:27 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:488:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+6:26:27 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:500:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+6:26:27 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:508:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+6:26:27 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:516:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+6:26:27 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:524:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+6:26:27 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:555:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+6:26:27 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:575:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+6:26:27 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:586:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+6:26:27 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:599:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+6:26:27 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:607:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+6:26:27 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:615:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+6:26:27 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:623:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+6:26:27 AM [vite] (client) hmr update /src/routes/dashboard/finances/+page.svelte, /src/app.css
+6:26:27 AM [vite] (ssr) page reload src/routes/dashboard/finances/+page.svelte
+6:26:40 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:449:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+6:26:40 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:458:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+6:26:40 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:466:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+6:26:40 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:477:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+6:26:40 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:490:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+6:26:40 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:502:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+6:26:40 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:510:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+6:26:40 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:518:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+6:26:40 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:526:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+6:26:40 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:557:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+6:26:40 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:577:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+6:26:40 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:588:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+6:26:40 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:601:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+6:26:40 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:609:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+6:26:40 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:617:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+6:26:40 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:625:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+6:26:40 AM [vite] (client) hmr update /src/routes/dashboard/finances/+page.svelte, /src/app.css
+6:26:40 AM [vite] (ssr) page reload src/routes/dashboard/finances/+page.svelte
+6:26:47 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:459:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+6:26:47 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:468:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+6:26:47 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:476:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+6:26:47 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:487:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+6:26:47 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:500:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+6:26:47 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:512:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+6:26:47 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:520:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+6:26:47 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:528:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+6:26:47 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:536:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+6:26:47 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:567:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+6:26:47 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:587:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+6:26:47 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:598:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+6:26:47 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:611:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+6:26:47 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:619:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+6:26:47 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:627:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+6:26:47 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:635:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+6:26:47 AM [vite] (client) hmr update /src/routes/dashboard/finances/+page.svelte, /src/app.css
+6:26:47 AM [vite] (ssr) page reload src/routes/dashboard/finances/+page.svelte
+6:27:14 AM [vite] (client) hmr update /src/app.css
+6:27:14 AM [vite] (ssr) page reload src/routes/dashboard/+page.svelte
+6:27:22 AM [vite] (ssr) page reload src/routes/dashboard/+page.svelte
+6:27:28 AM [vite] (ssr) page reload src/routes/dashboard/+page.svelte
+6:27:36 AM [vite] (ssr) page reload src/routes/dashboard/+page.svelte
+6:27:57 AM [vite] (client) hmr update /src/routes/dashboard/+page.svelte, /src/app.css
+6:27:57 AM [vite] (ssr) page reload src/routes/dashboard/+page.svelte
+6:28:18 AM [vite] (ssr) page reload src/routes/dashboard/+page.svelte
+6:28:31 AM [vite] (ssr) page reload src/routes/dashboard/+page.svelte
+6:28:43 AM [vite] (ssr) page reload src/routes/dashboard/+page.svelte
+6:28:48 AM [vite] (ssr) page reload src/routes/dashboard/+page.svelte
+6:29:06 AM [vite] (client) hmr update /src/app.css
+6:29:06 AM [vite] (ssr) page reload src/routes/dashboard/+page.svelte
+6:29:26 AM [vite] (client) hmr update /src/routes/dashboard/+page.svelte, /src/app.css
+6:29:26 AM [vite] (ssr) page reload src/routes/dashboard/+page.svelte
+6:31:24 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:459:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+6:31:24 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:468:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+6:31:24 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:476:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+6:31:24 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:487:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+6:31:24 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:500:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+6:31:24 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:512:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+6:31:24 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:520:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+6:31:24 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:528:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+6:31:24 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:536:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+6:31:24 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:567:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+6:31:24 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:587:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+6:31:24 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:598:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+6:31:24 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:611:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+6:31:24 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:619:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+6:31:24 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:627:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+6:31:24 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:635:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+6:31:24 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:459:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+6:31:24 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:468:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+6:31:24 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:476:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+6:31:24 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:487:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+6:31:24 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:500:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+6:31:24 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:512:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+6:31:24 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:520:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+6:31:24 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:528:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+6:31:24 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:536:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+6:31:24 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:567:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+6:31:24 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:587:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+6:31:24 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:598:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+6:31:24 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:611:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+6:31:24 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:619:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+6:31:24 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:627:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+6:31:24 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:635:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+6:35:40 AM [vite] (ssr) page reload src/routes/dashboard/finances/+page.svelte
+6:35:46 AM [vite] (ssr) page reload src/routes/dashboard/finances/+page.svelte
+6:36:06 AM [vite] (ssr) page reload src/routes/dashboard/finances/+page.svelte
+6:36:29 AM [vite] (ssr) page reload src/routes/dashboard/finances/+page.svelte
+6:36:54 AM [vite] (ssr) page reload src/routes/dashboard/finances/+page.svelte
+6:37:12 AM [vite] (ssr) page reload src/routes/dashboard/finances/+page.svelte
+6:37:33 AM [vite] (ssr) page reload src/routes/dashboard/finances/+page.svelte
+6:37:51 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:450:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+6:37:51 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:459:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+6:37:51 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:466:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+6:37:51 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:476:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+6:37:51 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:487:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+6:37:51 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:500:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+6:37:51 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:512:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+6:37:51 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:520:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+6:37:51 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:528:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+6:37:51 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:536:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+6:37:51 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:567:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+6:37:51 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:588:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+6:37:51 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:596:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+6:37:51 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:607:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+6:37:51 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:620:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+6:37:51 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:628:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+6:37:51 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:636:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+6:37:51 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:644:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+6:37:51 AM [vite] (client) hmr update /src/routes/dashboard/finances/+page.svelte, /src/app.css
+6:37:51 AM [vite] (ssr) page reload src/routes/dashboard/finances/+page.svelte
+6:37:51 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:450:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+6:37:51 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:459:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+6:37:51 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:466:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+6:37:51 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:476:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+6:37:51 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:487:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+6:37:51 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:500:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+6:37:51 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:512:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+6:37:51 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:520:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+6:37:51 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:528:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+6:37:51 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:536:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+6:37:51 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:567:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+6:37:51 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:588:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+6:37:51 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:596:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+6:37:51 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:607:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+6:37:51 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:620:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+6:37:51 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:628:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+6:37:51 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:636:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+6:37:51 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:644:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+6:41:18 AM [vite] (client) hmr update /src/routes/dashboard/finances/+page.svelte, /src/app.css
+6:41:18 AM [vite] (ssr) page reload src/routes/dashboard/finances/+page.svelte
+6:43:01 AM [vite] (ssr) page reload src/routes/dashboard/finances/+page.svelte
+6:43:35 AM [vite] (ssr) page reload src/routes/dashboard/finances/+page.svelte
+6:44:01 AM [vite] (ssr) page reload src/routes/dashboard/finances/+page.svelte
+6:44:07 AM [vite] (client) hmr update /src/routes/dashboard/finances/+page.svelte, /src/app.css
+6:44:07 AM [vite] (ssr) page reload src/routes/dashboard/finances/+page.svelte
+6:44:27 AM [vite] (client) hmr update /src/app.css
+6:44:27 AM [vite] (ssr) page reload src/routes/dashboard/finances/+page.svelte
+6:44:57 AM [vite] (client) hmr update /src/routes/dashboard/finances/+page.svelte, /src/app.css
+6:44:57 AM [vite] (ssr) page reload src/routes/dashboard/finances/+page.svelte
+6:45:14 AM [vite] (ssr) page reload src/routes/dashboard/finances/+page.svelte
+6:45:22 AM [vite] (ssr) page reload src/routes/dashboard/finances/+page.svelte
+6:45:35 AM [vite] (client) hmr update /src/routes/dashboard/finances/+page.svelte, /src/app.css
+6:45:35 AM [vite] (ssr) page reload src/routes/dashboard/finances/+page.svelte
+7:30:39 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:447:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+7:30:39 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:456:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+7:30:39 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:464:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+7:30:39 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:475:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+7:30:39 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:488:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+7:30:39 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:500:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+7:30:39 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:508:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+7:30:39 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:516:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+7:30:39 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:524:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+7:30:39 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:555:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+7:30:39 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:575:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+7:30:39 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:586:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+7:30:39 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:599:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+7:30:39 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:607:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+7:30:39 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:615:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+7:30:39 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:623:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+7:30:39 AM [vite] (client) hmr update /src/routes/dashboard/finances/+page.svelte, /src/app.css
+7:30:39 AM [vite] (ssr) page reload src/routes/dashboard/finances/+page.svelte
+7:30:39 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:447:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+7:30:39 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:456:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+7:30:39 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:464:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+7:30:39 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:475:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+7:30:39 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:488:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+7:30:39 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:500:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+7:30:39 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:508:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+7:30:39 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:516:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+7:30:39 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:524:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+7:30:39 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:555:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+7:30:39 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:575:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+7:30:39 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:586:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+7:30:39 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:599:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+7:30:39 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:607:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+7:30:39 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:615:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+7:30:39 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:623:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+7:31:14 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:452:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+7:31:14 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:461:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+7:31:14 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:469:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+7:31:14 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:480:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+7:31:14 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:493:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+7:31:14 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:505:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+7:31:14 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:513:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+7:31:14 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:521:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+7:31:14 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:529:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+7:31:14 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:560:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+7:31:14 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:580:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+7:31:14 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:591:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+7:31:14 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:604:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+7:31:14 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:612:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+7:31:14 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:620:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+7:31:14 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:628:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+7:31:14 AM [vite] (client) hmr update /src/routes/dashboard/finances/+page.svelte, /src/app.css
+7:31:14 AM [vite] (ssr) page reload src/routes/dashboard/finances/+page.svelte
+7:31:14 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:452:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+7:31:14 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:461:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+7:31:14 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:469:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+7:31:14 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:480:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+7:31:14 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:493:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+7:31:14 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:505:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+7:31:14 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:513:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+7:31:14 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:521:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+7:31:14 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:529:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+7:31:14 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:560:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+7:31:14 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:580:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+7:31:14 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:591:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+7:31:14 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:604:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+7:31:14 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:612:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+7:31:14 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:620:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+7:31:14 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:628:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+7:39:37 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:452:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+7:39:37 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:461:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+7:39:37 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:469:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+7:39:37 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:478:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+7:39:37 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:489:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+7:39:37 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:502:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+7:39:37 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:514:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+7:39:37 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:522:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+7:39:37 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:530:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+7:39:37 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:538:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+7:39:37 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:569:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+7:39:37 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:589:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+7:39:37 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:600:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+7:39:37 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:613:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+7:39:37 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:621:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+7:39:37 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:629:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+7:39:37 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:637:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+7:39:37 AM [vite] (client) hmr update /src/routes/dashboard/finances/+page.svelte, /src/app.css
+7:39:37 AM [vite] (ssr) page reload src/routes/dashboard/finances/+page.svelte
+7:39:37 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:452:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+7:39:37 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:461:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+7:39:37 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:469:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+7:39:37 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:478:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+7:39:37 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:489:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+7:39:37 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:502:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+7:39:37 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:514:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+7:39:37 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:522:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+7:39:37 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:530:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+7:39:37 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:538:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+7:39:37 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:569:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+7:39:37 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:589:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+7:39:37 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:600:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+7:39:37 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:613:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+7:39:37 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:621:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+7:39:37 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:629:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+7:39:37 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:637:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+7:39:57 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:452:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+7:39:57 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:461:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+7:39:57 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:469:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+7:39:57 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:478:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+7:39:57 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:489:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+7:39:57 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:502:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+7:39:57 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:514:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+7:39:57 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:522:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+7:39:57 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:530:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+7:39:57 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:538:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+7:39:57 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:569:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+7:39:57 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:590:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+7:39:57 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:598:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+7:39:57 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:609:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+7:39:57 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:622:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+7:39:57 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:630:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+7:39:57 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:638:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+7:39:57 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:646:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+7:39:57 AM [vite] (client) hmr update /src/routes/dashboard/finances/+page.svelte, /src/app.css
+7:39:57 AM [vite] (ssr) page reload src/routes/dashboard/finances/+page.svelte
+7:39:57 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:452:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+7:39:57 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:461:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+7:39:57 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:469:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+7:39:57 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:478:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+7:39:57 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:489:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+7:39:57 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:502:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+7:39:57 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:514:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+7:39:57 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:522:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+7:39:57 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:530:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+7:39:57 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:538:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+7:39:57 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:569:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+7:39:57 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:590:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+7:39:57 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:598:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+7:39:57 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:609:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+7:39:57 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:622:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+7:39:57 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:630:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+7:39:57 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:638:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+7:39:57 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:646:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+7:48:03 AM [vite-plugin-svelte] /home/ubuntu/aid-app/frontend/src/routes/dashboard/+page.svelte:175:3 This element is implicitly closed by the following `</main>`, which can cause an unexpected DOM structure. Add an explicit `</div>` to avoid surprises.
+https://svelte.dev/e/element_implicitly_closed
+7:48:03 AM [vite-plugin-svelte] /home/ubuntu/aid-app/frontend/src/routes/dashboard/+page.svelte:174:2 This element is implicitly closed by the following `</main>`, which can cause an unexpected DOM structure. Add an explicit `</div>` to avoid surprises.
+https://svelte.dev/e/element_implicitly_closed
+7:48:03 AM [vite] (client) hmr update /src/routes/dashboard/+page.svelte, /src/app.css
+7:48:03 AM [vite] (ssr) page reload src/routes/dashboard/+page.svelte
+7:48:03 AM [vite-plugin-svelte] /home/ubuntu/aid-app/frontend/src/routes/dashboard/+page.svelte:175:3 This element is implicitly closed by the following `</main>`, which can cause an unexpected DOM structure. Add an explicit `</div>` to avoid surprises.
+https://svelte.dev/e/element_implicitly_closed
+7:48:03 AM [vite-plugin-svelte] /home/ubuntu/aid-app/frontend/src/routes/dashboard/+page.svelte:174:2 This element is implicitly closed by the following `</main>`, which can cause an unexpected DOM structure. Add an explicit `</div>` to avoid surprises.
+https://svelte.dev/e/element_implicitly_closed
+7:48:10 AM [vite-plugin-svelte] /home/ubuntu/aid-app/frontend/src/routes/dashboard/+page.svelte:176:3 This element is implicitly closed by the following `</main>`, which can cause an unexpected DOM structure. Add an explicit `</div>` to avoid surprises.
+https://svelte.dev/e/element_implicitly_closed
+7:48:10 AM [vite-plugin-svelte] /home/ubuntu/aid-app/frontend/src/routes/dashboard/+page.svelte:175:2 This element is implicitly closed by the following `</main>`, which can cause an unexpected DOM structure. Add an explicit `</div>` to avoid surprises.
+https://svelte.dev/e/element_implicitly_closed
+7:48:10 AM [vite] (client) hmr update /src/routes/dashboard/+page.svelte, /src/app.css
+7:48:10 AM [vite] (ssr) page reload src/routes/dashboard/+page.svelte
+7:48:10 AM [vite-plugin-svelte] /home/ubuntu/aid-app/frontend/src/routes/dashboard/+page.svelte:176:3 This element is implicitly closed by the following `</main>`, which can cause an unexpected DOM structure. Add an explicit `</div>` to avoid surprises.
+https://svelte.dev/e/element_implicitly_closed
+7:48:10 AM [vite-plugin-svelte] /home/ubuntu/aid-app/frontend/src/routes/dashboard/+page.svelte:175:2 This element is implicitly closed by the following `</main>`, which can cause an unexpected DOM structure. Add an explicit `</div>` to avoid surprises.
+https://svelte.dev/e/element_implicitly_closed
+7:48:18 AM [vite-plugin-svelte] /home/ubuntu/aid-app/frontend/src/routes/dashboard/+page.svelte:176:3 This element is implicitly closed by the following `</main>`, which can cause an unexpected DOM structure. Add an explicit `</div>` to avoid surprises.
+https://svelte.dev/e/element_implicitly_closed
+7:48:18 AM [vite-plugin-svelte] /home/ubuntu/aid-app/frontend/src/routes/dashboard/+page.svelte:175:2 This element is implicitly closed by the following `</main>`, which can cause an unexpected DOM structure. Add an explicit `</div>` to avoid surprises.
+https://svelte.dev/e/element_implicitly_closed
+7:48:18 AM [vite] (client) hmr update /src/app.css
+7:48:18 AM [vite] (ssr) page reload src/routes/dashboard/+page.svelte
+7:50:09 AM [vite-plugin-svelte] src/routes/dashboard/forms/+page.svelte:246:11 Buttons and links should either contain text or have an `aria-label` or `aria-labelledby` attribute
+https://svelte.dev/e/a11y_consider_explicit_label
+7:50:09 AM [vite-plugin-svelte] src/routes/dashboard/forms/+page.svelte:296:3 Visible, non-interactive elements with a click event must be accompanied by a keyboard event handler. Consider whether an interactive element such as `<button type="button">` or `<a>` might be more appropriate
+https://svelte.dev/e/a11y_click_events_have_key_events
+7:50:09 AM [vite-plugin-svelte] src/routes/dashboard/forms/+page.svelte:296:3 `<div>` with a click handler must have an ARIA role
+https://svelte.dev/e/a11y_no_static_element_interactions
+7:50:09 AM [vite-plugin-svelte] src/routes/dashboard/forms/+page.svelte:349:3 Visible, non-interactive elements with a click event must be accompanied by a keyboard event handler. Consider whether an interactive element such as `<button type="button">` or `<a>` might be more appropriate
+https://svelte.dev/e/a11y_click_events_have_key_events
+7:50:09 AM [vite-plugin-svelte] src/routes/dashboard/forms/+page.svelte:349:3 `<div>` with a click handler must have an ARIA role
+https://svelte.dev/e/a11y_no_static_element_interactions
+7:50:09 AM [vite-plugin-svelte] src/routes/dashboard/forms/+page.svelte:368:7 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+7:50:09 AM [vite-plugin-svelte] src/routes/dashboard/forms/+page.svelte:396:8 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+7:50:09 AM [vite-plugin-svelte] src/routes/dashboard/forms/+page.svelte:410:12 Buttons and links should either contain text or have an `aria-label` or `aria-labelledby` attribute
+https://svelte.dev/e/a11y_consider_explicit_label
+7:50:09 AM [vite-plugin-svelte] src/routes/dashboard/forms/+page.svelte:246:11 Buttons and links should either contain text or have an `aria-label` or `aria-labelledby` attribute
+https://svelte.dev/e/a11y_consider_explicit_label
+7:50:09 AM [vite-plugin-svelte] src/routes/dashboard/forms/+page.svelte:296:3 Visible, non-interactive elements with a click event must be accompanied by a keyboard event handler. Consider whether an interactive element such as `<button type="button">` or `<a>` might be more appropriate
+https://svelte.dev/e/a11y_click_events_have_key_events
+7:50:09 AM [vite-plugin-svelte] src/routes/dashboard/forms/+page.svelte:296:3 `<div>` with a click handler must have an ARIA role
+https://svelte.dev/e/a11y_no_static_element_interactions
+7:50:09 AM [vite-plugin-svelte] src/routes/dashboard/forms/+page.svelte:349:3 Visible, non-interactive elements with a click event must be accompanied by a keyboard event handler. Consider whether an interactive element such as `<button type="button">` or `<a>` might be more appropriate
+https://svelte.dev/e/a11y_click_events_have_key_events
+7:50:09 AM [vite-plugin-svelte] src/routes/dashboard/forms/+page.svelte:349:3 `<div>` with a click handler must have an ARIA role
+https://svelte.dev/e/a11y_no_static_element_interactions
+7:50:09 AM [vite-plugin-svelte] src/routes/dashboard/forms/+page.svelte:368:7 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+7:50:09 AM [vite-plugin-svelte] src/routes/dashboard/forms/+page.svelte:396:8 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+7:50:09 AM [vite-plugin-svelte] src/routes/dashboard/forms/+page.svelte:410:12 Buttons and links should either contain text or have an `aria-label` or `aria-labelledby` attribute
+https://svelte.dev/e/a11y_consider_explicit_label
+7:51:51 AM [vite] (client) page reload src/locales/en.json
+7:51:51 AM [vite] (ssr) page reload src/locales/en.json
+7:52:10 AM [vite] (client) page reload src/locales/ar.json
+7:52:10 AM [vite] (ssr) page reload src/locales/ar.json
+7:52:28 AM [vite] (client) hmr update /src/routes/login/+page.svelte, /src/app.css
+7:52:28 AM [vite] (ssr) page reload src/routes/login/+page.svelte
+7:53:58 AM [vite] (ssr) page reload src/routes/dashboard/+page.svelte
+7:54:26 AM [vite] (ssr) page reload src/routes/dashboard/+page.svelte
+7:54:40 AM [vite] (ssr) page reload src/routes/dashboard/+page.svelte
+7:55:21 AM [vite] (client) Pre-transform error: src/routes/dashboard/+page.svelte:10:22 Cannot use `await` in deriveds and template expressions, or at the top level of a component, unless the `experimental.async` compiler option is `true`
+https://svelte.dev/e/experimental_async
+  Plugin: vite-plugin-svelte:compile
+  File: src/routes/dashboard/+page.svelte:10:22
+    8 |      // Fetch the total number of users
+    9 |      try {
+   10 |        const userResult = await pb.collection('users').getList(1, 1, {
+                 ^
+   11 |          fields: 'id'
+   12 |        });
+7:55:21 AM [vite] Internal server error: src/routes/dashboard/+page.svelte:10:22 Cannot use `await` in deriveds and template expressions, or at the top level of a component, unless the `experimental.async` compiler option is `true`
+https://svelte.dev/e/experimental_async
+  Plugin: vite-plugin-svelte:compile
+  File: src/routes/dashboard/+page.svelte:10:22
+    8 |      // Fetch the total number of users
+    9 |      try {
+   10 |        const userResult = await pb.collection('users').getList(1, 1, {
+                 ^
+   11 |          fields: 'id'
+   12 |        });
+7:55:30 AM [vite] Internal server error: src/routes/dashboard/+page.svelte:10:22 Cannot use `await` in deriveds and template expressions, or at the top level of a component, unless the `experimental.async` compiler option is `true`
+https://svelte.dev/e/experimental_async
+  Plugin: vite-plugin-svelte:compile
+  File: src/routes/dashboard/+page.svelte:10:22
+    8 |      // Fetch the total number of users
+    9 |      try {
+   10 |        const userResult = await pb.collection('users').getList(1, 1, {
+                 ^
+   11 |          fields: 'id'
+   12 |        });
+7:55:31 AM [vite] Internal server error: src/routes/dashboard/+page.svelte:10:22 Cannot use `await` in deriveds and template expressions, or at the top level of a component, unless the `experimental.async` compiler option is `true`
+https://svelte.dev/e/experimental_async
+  Plugin: vite-plugin-svelte:compile
+  File: src/routes/dashboard/+page.svelte:10:22
+    8 |      // Fetch the total number of users
+    9 |      try {
+   10 |        const userResult = await pb.collection('users').getList(1, 1, {
+                 ^
+   11 |          fields: 'id'
+   12 |        });
+7:55:32 AM [vite] Internal server error: src/routes/dashboard/+page.svelte:10:22 Cannot use `await` in deriveds and template expressions, or at the top level of a component, unless the `experimental.async` compiler option is `true`
+https://svelte.dev/e/experimental_async
+  Plugin: vite-plugin-svelte:compile
+  File: src/routes/dashboard/+page.svelte:10:22
+    8 |      // Fetch the total number of users
+    9 |      try {
+   10 |        const userResult = await pb.collection('users').getList(1, 1, {
+                 ^
+   11 |          fields: 'id'
+   12 |        });
+7:56:22 AM [vite] (ssr) page reload src/routes/dashboard/+page.svelte
+7:56:43 AM [vite-plugin-svelte] /home/ubuntu/aid-app/frontend/src/routes/dashboard/+page.svelte:187:3 This element is implicitly closed by the following `</main>`, which can cause an unexpected DOM structure. Add an explicit `</div>` to avoid surprises.
+https://svelte.dev/e/element_implicitly_closed
+7:56:43 AM [vite-plugin-svelte] /home/ubuntu/aid-app/frontend/src/routes/dashboard/+page.svelte:186:2 This element is implicitly closed by the following `</main>`, which can cause an unexpected DOM structure. Add an explicit `</div>` to avoid surprises.
+https://svelte.dev/e/element_implicitly_closed
+7:56:43 AM [vite] (client) hmr update /src/routes/dashboard/+page.svelte, /src/app.css
+7:56:43 AM [vite] (ssr) page reload src/routes/dashboard/+page.svelte
+7:56:43 AM [vite-plugin-svelte] /home/ubuntu/aid-app/frontend/src/routes/dashboard/+page.svelte:187:3 This element is implicitly closed by the following `</main>`, which can cause an unexpected DOM structure. Add an explicit `</div>` to avoid surprises.
+https://svelte.dev/e/element_implicitly_closed
+7:56:43 AM [vite-plugin-svelte] /home/ubuntu/aid-app/frontend/src/routes/dashboard/+page.svelte:186:2 This element is implicitly closed by the following `</main>`, which can cause an unexpected DOM structure. Add an explicit `</div>` to avoid surprises.
+https://svelte.dev/e/element_implicitly_closed
+7:59:25 AM [vite] (client) hmr update /src/lib/components/Navbar.svelte, /src/app.css
+7:59:25 AM [vite] (ssr) page reload src/lib/components/Navbar.svelte
+8:12:13 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:452:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+8:12:13 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:461:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+8:12:13 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:469:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+8:12:13 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:478:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+8:12:13 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:489:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+8:12:13 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:502:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+8:12:13 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:514:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+8:12:13 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:522:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+8:12:13 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:530:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+8:12:13 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:538:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+8:12:13 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:569:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+8:12:13 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:590:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+8:12:13 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:598:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+8:12:13 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:609:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+8:12:13 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:622:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+8:12:13 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:630:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+8:12:13 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:638:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+8:12:13 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:646:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+8:12:13 AM [vite] (client) hmr update /src/routes/dashboard/finances/+page.svelte, /src/app.css
+8:12:13 AM [vite] (ssr) page reload src/routes/dashboard/finances/+page.svelte
+8:12:13 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:452:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+8:12:13 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:461:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+8:12:13 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:469:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+8:12:13 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:478:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+8:12:13 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:489:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+8:12:13 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:502:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+8:12:13 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:514:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+8:12:13 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:522:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+8:12:13 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:530:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+8:12:13 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:538:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+8:12:13 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:569:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+8:12:13 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:590:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+8:12:13 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:598:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+8:12:13 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:609:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+8:12:13 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:622:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+8:12:13 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:630:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+8:12:13 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:638:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
+8:12:13 AM [vite-plugin-svelte] src/routes/dashboard/finances/+page.svelte:646:6 A form label must be associated with a control
+https://svelte.dev/e/a11y_label_has_associated_control
