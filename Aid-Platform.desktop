@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Aid Platform
+Comment=Aid Management System
+Exec=/home/ubuntu/aid-app/start-aid-app.sh
+Icon=/home/ubuntu/aid-app/icon.png
+Terminal=false
+Categories=Office;Finance;
+StartupNotify=true
+
